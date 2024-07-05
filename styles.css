@@ -1,0 +1,204 @@
+.flex-container, .contadores {
+    display: flex;
+}
+
+.bordered {
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.justified-container{
+    justify-content: center;
+}
+
+.sub-menu{
+    display: flex; 
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  
+.flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 200px;
+    border: 2px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 140px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: hsl(0, 0%, 0%);
+    height: 100%;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/originals/7f/89/c1/7f89c1ae58a1fb6a01e026367807a87b.jpg");
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.flip-card-back {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.btnAdd {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.subMenuAdd {
+    font-size: 30px;
+}
+
+.btnBack{
+    display: none;
+    margin: 17px;
+    padding: 10px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 30px;
+    width: 110px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.try-counter {
+    line-height: 70px;
+    margin-left: 35%;
+    margin-bottom: 20px;
+    width:fit-content;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.try-counter-hardcore{
+    margin-left: 27%;
+}
+
+.timer {
+    line-height: 70px;
+    margin-left: 13%;
+    margin-bottom: 20px;
+    width:fit-content;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.try-counter div, .timer div{
+    margin: 0 5px;
+}
+
+
+
+.btnAdd:active {
+    background-color: black;
+    transform: translateY(2px);
+}
+
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/174/599/non_2x/realistic-brown-wood-template-free-vector.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: Brush Script MT;
+    font-size: 70px;
+}
+
+.checkerboard { 
+    width: 100%; 
+    height: 100%;
+    margin: auto; 
+    background-color: #b97e2f; 
+    background-image: linear-gradient( 45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000 ),
+  linear-gradient( -45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000 );
+    background-size: 40px 40px; 
+    background-repeat: repeat; 
+    border-radius: 8px;
+}
+
+.final-message div{
+    margin: 20px 20px;
+}
+
+.final-message{
+    font-family: Impact, fantasy;
+    line-height: 100px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width:fit-content;
+    font-size: 100px;
+    border-radius: 10px;
+}
+
+
+.final-message-info{
+    font-family: Impact, fantasy;
+    line-height: 40px;
+    margin: auto;
+    margin-bottom: 40px;
+    width:fit-content;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.leaderboard{
+    line-height: 40px;
+    margin: auto;
+    margin-bottom: 10px;
+    width:100%;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.record-container {
+    background-color: black;
+    border-radius: 10px;
+}

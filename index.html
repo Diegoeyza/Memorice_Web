@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body id="wholeBody">
+    <div>
+        <h1 class="flex-container justified-container" id="mainMenu">Memorice</h1>
+        <h2 class="flex-container sub-menu" id="subMenu"> 
+            <div class="subMenuAdd" id="sub">Seleccione la cantidad de cartas
+            </div>
+        </h2>
+    </div>
+
+    <div class="background">
+        <div class="flex-container justified-container" id="btnDiv">
+            <div>
+                <button class="btnAdd" id="8">8</button>
+            </div>
+            <div>
+                <button class="btnAdd" id="16">16</button>
+            </div>
+            <div>
+                <button class="btnAdd" id="32">32</button>
+            </div>
+            <div>
+                <button class="btnAdd" id="hardcore">&#128128;</button>
+            </div>
+        </div>
+        <exit class="flex-container justified-container" id="btnBackContainer">
+            <button class="btnBack" id="btnReturn">Volver</button>
+        </exit>
+        <div class="contadores">
+        <count class="flex-container try-counter" id="counter"></count>
+        <count class="flex-container timer" id="time"></count>
+        </div>
+        <div class="checkerboard">
+            <div class="flex-container card-container bordered" id="card-container">
+            </div>
+        </div>
+        <div>
+            <div class="flex-container final-message" id="winner"></div>
+            <div class="flex-container final-message-info" id="winner-counter"></div>
+            <div class="flex-container final-message-info" id="winner-timer"></div>
+            <div class= "record-container" id="lb">
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
